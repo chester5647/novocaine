@@ -290,6 +290,7 @@ void RingBuffer::Clear()
 		memset(mData[i], 0, sizeof(float)*mSizeOfBuffer);
 		mLastWrittenIndex[i] = 0;
 		mLastReadIndex[i] = 0;
+		mNumUnreadFrames[i] = 0;
 	}
 	
 }
